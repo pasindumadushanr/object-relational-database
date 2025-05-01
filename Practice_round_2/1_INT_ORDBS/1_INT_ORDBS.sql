@@ -1,0 +1,1 @@
+CREATE TYPE dept_t

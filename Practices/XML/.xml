@@ -1,0 +1,22 @@
+CREATE TABLE demo(
+    id INT PRIMARY KEY,
+    exml XML
+);
+
+INSERT INTO demo (id, exml) 
+VALUES (1,
+ '<Persons>
+    <Person id="1">
+    <Name>John Doe</Name>
+    <Age>22</Age>
+    </Person>
+    
+    <Person id="2">
+    <Name>Jane Smith</Name>
+    <Age>30</Age>
+    </Person>
+ </Persons>');
+
+ SELECT * FROM demo;
+
+ SELECT id
